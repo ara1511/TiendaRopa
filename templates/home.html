@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Tienda de Ropa para Niñas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(90deg, rgba(238,0,153,1) 0%, rgba(221,45,135,1) 35%, rgba(69,10,67,1) 100%);
+            color: white;
+            padding: 60px 0;
+        }
+        .header h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.5em;
+        }
+        .btn-custom {
+            background-color: #dd2d87;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #bd0058;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header text-center">
+        <h1>Bienvenido a la Tienda de Ropa para Niñas</h1>
+        <p>Descubre las mejores prendas para niñas</p>
+        <a href="/items" class="btn btn-custom">Ver Items</a>
+    </div>
+
+    <div class="container">
+        <h2>Nuestras Categorías</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/e3/7b/fd/e37bfd4f60df5fdf37c7e93af4a70759.jpg" class="card-img-top" alt="Vestidos">
+                    <div class="card-body">
+                        <h5 class="card-title">Vestidos</h5>
+                        <p class="card-text">Hermosos vestidos para todas las ocasiones.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/7b/1e/a3/7b1ea30fe052b16b7d466e0912c462d1.jpg" class="card-img-top" alt="Camisas">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisas</h5>
+                        <p class="card-text">Camisas elegantes y cómodas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/14/f1/66/14f16683e41cd3a2f75d73117ca0fd02.jpg" class="card-img-top" alt="Pantalones">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantalones</h5>
+                        <p class="card-text">Pantalones de diversos estilos y colores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

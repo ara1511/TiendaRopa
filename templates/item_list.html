@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Items - Tienda de Ropa para Niñas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(90deg, rgba(238,0,153,1) 0%, rgba(221,45,135,1) 35%, rgba(69,10,67,1) 100%);
+            color: white;
+            padding: 30px 0;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            margin-bottom: 30px;
+        }
+        .btn-custom {
+            background-color: #dd2d87;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #bd0058;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header text-center">
+        <h1>Lista de Items</h1>
+        <a href="/" class="btn btn-custom">Volver a Inicio</a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% for item in items %}
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="{{ item.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.name }}</h5>
+                        <p class="card-text">{{ item.category }}</p>
+                        <p class="card-text font-weight-bold">${{ item.price }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
